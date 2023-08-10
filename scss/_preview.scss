@@ -1,0 +1,48 @@
+.preview{
+  padding:120px 0;
+  background:$cinza-claro;
+  text-align:center;
+
+  h1{
+    font-size:2.25em;
+    color:$roxo-principal;
+    text-align:center;
+  }
+
+  p{
+    max-width:720px;
+    text-align:center;
+    line-height:1.5;
+    margin:30px auto;
+    color:$cinza;
+  }
+}
+
+.btn-group{
+  display:inline-block;
+  margin:30px auto 60px auto;
+}
+
+.btn{
+  width:160px;
+  text-align:center;
+  padding:15px 0;
+  border-radius:5px;
+  border:none;
+  margin-left:15px;
+  margin-right:15px;
+  font-weight: bold;
+  outline:none;
+  @include shadow;
+  cursor:pointer;
+}
+
+.btn-preview{
+  color:$cinza-blackout;
+  background:#fff;
+}
+
+.img-preview{
+  @include shadow;
+  border-radius:10px;
+}

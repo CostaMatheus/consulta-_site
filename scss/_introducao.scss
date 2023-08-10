@@ -1,0 +1,35 @@
+.bg-intro{
+    position:relative;
+    background: $gradient-roxo;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    padding-top: 91px;
+    position: relative;
+    height: 90%;
+}
+
+.intro{
+    position:relative;
+    margin:120px 0;
+    text-align:center;
+    h1{
+        font-size:3em;
+        max-width:565px;
+        margin:0 auto;
+        text-align:center;
+        line-height: 60px;
+        color:#fff;
+    }
+    p{
+        color:#fff;
+        font-size:1em;
+        max-width:585px;
+        margin:30px auto;
+        text-align:center;
+        line-height: 1.5;
+    }
+}
+
+.intro .btn-link{
+    margin:0px auto;
+}

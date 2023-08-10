@@ -1,0 +1,16 @@
+$roxo-claro:#8B8BFF;
+$roxo-principal: #6666FF;
+$cinza:#677583;
+$vermelho:#D63C3C;
+$vermelho-claro:#FF9292;
+$cinza-claro:#F7F8FF;
+$cinza-blackout:#343441;
+$gradient-roxo:linear-gradient(135deg, #6666FF 0%, #8B8BFF 100%);
+$gradient-vermelho:linear-gradient(135deg, #D63C3C 0%, #F16363 100%);
+$gradient-vermelho-hover:linear-gradient(135deg, #B51D1D 0%, #D63C3C 100%);
+$shadow:0px 2px 9px rgba(62, 57, 107, 0.1), 0px 10px 40px rgba(0, 0, 0, 0.1);
+
+@mixin shadow{
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1),
+              0px 2px 9px rgba(62, 57, 107, 0.1);
+}

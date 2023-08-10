@@ -1,0 +1,182 @@
+.topo{
+    position:relative;
+}
+
+
+#wave{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+}
+
+.navbar{
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  z-index: 10;
+  padding:15px 0px;
+  background: transparent;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+  transition: .25s;
+}
+
+.navbar > .container{
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+/*logotipo*/
+
+.logotipo{
+    display:inline-block;
+}
+
+.logotipo path.cls-1, .logotipo path.cls-3{
+    fill:#fff;
+}
+
+.logotipo path.cls-2{
+    fill:$roxo-principal;
+}
+
+.navbar-mobile{
+    width:0px;
+    height:0px;
+    visibility: hidden;
+    transition:.25s;
+}
+
+.list-nav{
+    display:flex;
+    display:-ms-flexbox;
+    flex-wrap:wrap;
+    -ms-flex-wrap:wrap;
+}
+
+.list-item{
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  text-align: center;
+  display:inline-block;
+}
+
+/*dropdown*/
+.dropdown-content{
+    display:none;
+    width: 280px;
+    position: absolute;
+    background: #fff;
+    border-radius:5px;
+    @include shadow;
+  }
+  
+.dropdown-link{
+display: flex;
+display:-ms-flexbox;
+align-items: center;
+-ms-flex-align: center;
+width: 100%;
+padding: 15px;
+color: $cinza;
+text-align: left;
+white-space: nowrap;
+text-decoration:none;
+border-radius:5px;
+}
+
+.dropdown-content.open{
+    display:block;
+}
+
+.dropdown-link span{
+    display:inline-block;
+}
+
+.dropdown-link span:not(:first-of-type){
+    margin-left:15px;
+}
+
+.dropdown-link:hover{
+    background:$cinza-claro;
+}
+
+.dropdown-icon{
+    width:32px;
+}
+
+.divider{
+    display:block;
+    height:1px;
+    width:100%;
+    background:#E0E2E5;
+}
+
+.btn-primary{
+    background:$gradient-vermelho;
+    border-radius:5px;
+    font-weight:bold;
+    display:inline-block;
+    color:#fff;
+}
+
+.btn-primary:hover{
+    background:$gradient-vermelho-hover;
+}
+
+.btn-link{
+    text-decoration:none;
+    color:#fff;
+    display:inline-block;
+    padding:15px 30px;
+}
+
+.icon-angle-down{
+    margin-left:5px;
+}
+
+/*Quando dar o scroll*/
+
+.navbar.changed{
+    background:#fff;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.06);
+}
+
+.navbar.changed .logotipo path.cls-1{
+    fill:$roxo-principal;
+}
+
+.navbar.changed .logotipo path.cls-2{
+    fill:#fff;
+}
+
+.navbar.changed .logotipo path.cls-3{
+    fill:$cinza;
+}
+
+.navbar.changed .btn-link{
+    color:$cinza;
+}
+
+.navbar.changed .btn-link.btn-primary {
+    color:#fff;
+}
+
+@media only screen and (min-width: 992px) and (max-width:1199.98px){
+    .navbar > .container{
+        width:100%;
+        max-width:100%;
+    }
+    
+    .btn-link{
+        padding:15px 20px;
+    }
+}
+
